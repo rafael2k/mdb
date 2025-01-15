@@ -7,16 +7,16 @@
 #define _CHIP_INTEL 1
 
 /* for 16 bits */
-// #define _WORD_SIZE 2
-// #ifndef __i86
-// #define __i86
-// #endif
-
-// for 32 bits
-#define _WORD_SIZE 4
-#ifndef __i386
-#define __i386
+#define _WORD_SIZE 2
+#ifndef __i86
+#define __i86
 #endif
+
+/* for 32 bits -- DISABLED */
+//#define _WORD_SIZE 4
+//#ifndef __i386
+//#define __i386
+//#endif
 /* -- */
 
 #define MDBVERSION	"2.6"
