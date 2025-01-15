@@ -41,10 +41,9 @@ OBJS = $(SRCS:.c=.oaj)
 ############# End of Standard Section ##############
 
 BINDIR = ../elks-bin
-LOCALFLAGS = -Dunix
 LDFLAGS += -maout-stack=4096 -maout-heap=16384
 SRCS = mdb.c mdbexp.c kernel.o sym.c trace.c core.c misc.c io.c
-PROG = $(BINDIR)/make
+PROG = $(BINDIR)/mdb
 
 all: $(PROG)
 
