@@ -1,6 +1,24 @@
 /*
  * mdb.h for mdb
- */ 
+ */
+
+/* -- some boilerplate for non-minix compilation */
+#define _MINIX_CHIP 1
+#define _CHIP_INTEL 1
+
+/* for 16 bits */
+// #define _WORD_SIZE 2
+// #ifndef __i86
+// #define __i86
+// #endif
+
+// for 32 bits
+#define _WORD_SIZE 2
+#ifndef __i386
+#define __i386
+#endif
+/* -- */
+
 #define MDBVERSION	"2.6"
 #define MDBBUILD	0
 
