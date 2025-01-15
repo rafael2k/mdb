@@ -13,7 +13,7 @@
 // #endif
 
 // for 32 bits
-#define _WORD_SIZE 2
+#define _WORD_SIZE 4
 #ifndef __i386
 #define __i386
 #endif
